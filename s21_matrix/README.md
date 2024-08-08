@@ -87,3 +87,28 @@ make
 make test
 ```
 
+## Структура проекта
+```
+s21_matrix
+├── README.md
+└── src
+    ├── Makefile
+    ├── s21_matrix.c
+    ├── s21_matrix.h
+    ├── s21_matrix_help.c
+    └── test
+        ├── logs
+        ├── s21_help_func_test.c
+        ├── test_s21_calc_complements.c
+        ├── test_s21_create_remove_matrix.c
+        ├── test_s21_determinant.c
+        ├── test_s21_eq_matrix.c
+        ├── test_s21_inverse_matrix.c
+        ├── test_s21_matrix.c
+        ├── test_s21_matrix.h
+        ├── test_s21_mult_matrix.c
+        ├── test_s21_mult_number.c
+        ├── test_s21_sub_matrix.c
+        ├── test_s21_sum_matrix.c
+        └── test_s21_transpose.c
+```
