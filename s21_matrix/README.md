@@ -75,3 +75,15 @@ int s21_determinant(matrix_t *A, double *result);
 ```c
 int s21_inverse_matrix(matrix_t *A, matrix_t *result);
 ```
+
+## Сборка библиотеки
+```
+make
+```
+
+## Запуск тестов
+Для тестов использовалась библиотека check: https://github.com/libcheck/check
+```
+make test
+```
+
