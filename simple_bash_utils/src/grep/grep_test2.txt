@@ -1,0 +1,27 @@
+GREP(1)                                             User Commands                                             GREP(1)
+
+NAME
+       grep, egrep, fgrep - print lines that match patterns
+
+SYNOPSIS
+       grep [OPTION...] PATTERNS [FILE...]
+       grep [OPTION...] -e PATTERNS ... [FILE...]
+       grep [OPTION...] -f PATTERN_FILE ... [FILE...]
+
+DESCRIPTION
+       grep  searches  for  PATTERNS in each FILE.  PATTERNS is one or more patterns separated by newline characters,
+       and grep prints each line that matches a pattern.  Typically PATTERNS should be quoted when grep is used in  a
+       shell command.
+
+       A  FILE  of  “-”  stands  for  standard  input.   If  no FILE is given, recursive searches examine the working
+       directory, and nonrecursive searches read standard input.
+
+       In addition, the variant programs egrep and fgrep are the same as grep -E and  grep -F,  respectively.   These
+       variants are deprecated, but are provided for backward compatibility.
+
+OPTIONS
+   Generic Program Information
+       --help Output a usage message and exit.
+
+       -V, --version
+              Output the version number of grep and exit.
