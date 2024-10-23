@@ -29,8 +29,8 @@ make dvi
 make test
 ```
 
-## Структура iроекта
-
+## Структура проекта
+```
 brick_game_v1/
 ├── README.md
 └── src
@@ -64,5 +64,4 @@ brick_game_v1/
         ├── logs
         ├── test_brick_game_v1.c
         └── test_start.c
-
-14 directories, 19 files
+```
