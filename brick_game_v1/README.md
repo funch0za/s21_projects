@@ -8,9 +8,61 @@
 sudo apt-get install libncurses5-dev libncursesw5-dev
 ```
 
-
-## Сборка и запуск
+## Сборка
 ```
 make
-./build/brick_game_v1
 ```
+
+## Запуск игры
+```
+./brick_game/tetris
+```
+
+## Сборка документации
+Для документирования используется Doxygen.
+```
+make dvi
+```
+
+## Запуск тестов
+```
+make test
+```
+
+## Структура iроекта
+
+brick_game_v1/
+├── README.md
+└── src
+    ├── brick_game
+    │   └── tetris
+    │       ├── backend.c
+    │       ├── connect.c
+    │       ├── fsm.c
+    │       └── include
+    │           ├── backend.h
+    │           ├── connect.h
+    │           ├── fsm.h
+    │           ├── macros.h
+    │           └── objects.h
+    ├── build
+    ├── data
+    │   └── hiscore.txt
+    ├── Doxyfile
+    ├── FSM.png
+    ├── gui
+    │   └── cli
+    │       ├── frontend.c
+    │       └── include
+    │           └── frontend.h
+    ├── Makefile
+    ├── run
+    │   └── main.c
+    └── test
+        ├── include
+        │   └── test_brick_game_v1.h
+        ├── logs
+        ├── test_brick_game_v1.c
+        └── test_start.c
+
+14 directories, 19 files
