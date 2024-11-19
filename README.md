@@ -4,4 +4,4 @@
 + [Matrix](https://github.com/funch0za/s21_projects/tree/main/matrix)
 + [Matrix plus](https://github.com/funch0za/s21_projects/tree/main/matrixplus)
 + [Simple bash utils](https://github.com/funch0za/s21_projects/tree/main/simple_bash_utils)
-+ [Containers]
++ [Containers](https://github.com/funch0za/s21_projects/tree/main/containers)
