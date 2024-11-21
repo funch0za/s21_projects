@@ -15,37 +15,37 @@ void S21Matrix::SetCols(int cols) {
   S21Matrix buf(*this);
   for (size_t i = 0; i < this->rows_; ++i) {
     delete[] this->matrix_[i];
-    this->matrix_[i] = new double[cols];
+    matrix_[i] = new double[cols];
     std::copy(buf.matrix_[i],
               buf.matrix_[i] + std::min(size_t(cols), buf.cols_),
-              this->matrix_[i]);
+              matrix_[i]);
   }
-  this->cols_ = cols;
+  cols_ = cols;
 }
 
 void S21Matrix::SetRows(int rows) {
   if (rows <= 0) {
     throw std::invalid_argument("incorrect matrix size");
   }
-  if (size_t(rows) == this->rows_) {
+  if (size_t(rows) == rows_) {
     return;
   }
 
   S21Matrix buf(*this);
-  for (size_t i = 0; i < this->rows_; ++i) {
+  for (size_t i = 0; i < rows_; ++i) {
     delete[] this->matrix_[i];
   }
   delete[] this->matrix_;
 
-  this->rows_ = rows;
-  this->matrix_ = new double* [this->rows_] { nullptr };
-  for (size_t i = 0; i < this->rows_; ++i) {
-    this->matrix_[i] = new double[this->cols_]{0};
-    std::copy(buf.matrix_[i], buf.matrix_[i] + buf.cols_, this->matrix_[i]);
+  rows_ = rows;
+  matrix_ = new double* [rows_] { nullptr };
+  for (size_t i = 0; i < rows_; ++i) {
+    matrix_[i] = new double[cols_]{0};
+    std::copy(buf.matrix_[i], buf.matrix_[i] + buf.cols_, matrix_[i]);
   }
 }
 
 void S21Matrix::SetElement(int i, int j, double num) {
-  this->CheckIndex(i, j);
-  this->matrix_[i][j] = num;
+  CheckIndex(i, j);
+  matrix_[i][j] = num;
 }
