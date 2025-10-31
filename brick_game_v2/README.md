@@ -46,7 +46,6 @@ make test
 ```
 ## Структура проекта
 ```
-.
 ├── app
 │   ├── app.cpp
 │   ├── app.h
@@ -77,34 +76,6 @@ make test
 │       ├── tetris_objects.h
 │       ├── tetris.c
 │       └── tetris.h
-├── brick_game_v2
-├── brick_game_v2_desktop
-├── build
-│   ├── lib
-│   │   └── libbrickgame.a
-│   └── obj
-│       ├── app
-│       │   ├── app.o
-│       │   └── main.o
-│       ├── brick_game
-│       │   ├── snake
-│       │   │   ├── controller
-│       │   │   │   └── snake_controller.o
-│       │   │   └── model
-│       │   │       └── snake_model.o
-│       │   └── tetris
-│       │       ├── tetris_connect.o
-│       │       ├── tetris_figure.o
-│       │       ├── tetris_game_machine.o
-│       │       ├── tetris_map.o
-│       │       ├── tetris_matrix_operations.o
-│       │       └── tetris.o
-│       └── gui
-│           └── desktop
-│               ├── snake
-│               │   └── snake_desktop.o
-│               └── tetris
-│                   └── tetris_desktop.o
 ├── Doxyfile
 ├── FSM_tetris.png
 ├── gui
