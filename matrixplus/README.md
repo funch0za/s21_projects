@@ -1,7 +1,5 @@
 # s21_matrixplus
-
 В данном проекте нужно было реализовать свою библиотеку для обработки числовых матриц на языке программирования С++ с использованием ООП.
-
 ## Класс матрицы
 ```cpp
 class S21Matrix {
@@ -18,7 +16,6 @@ class S21Matrix {
         // Other methods..
 }
 ```
-
 ## Операции на матрицами
 | Операция    | Описание   | Исключительные ситуации |
 | ----------- | ----------- | ----------- |
@@ -31,7 +28,6 @@ class S21Matrix {
 | `S21Matrix CalcComplements()` | Вычисляет матрицу алгебраических дополнений текущей матрицы и возвращает ее. | Матрица не является квадратной. |
 | `double Determinant()` | Вычисляет и возвращает определитель текущей матрицы. | Матрица не является квадратной. |
 | `S21Matrix InverseMatrix()` | Вычисляет и возвращает обратную матрицу. | Определитель матрицы равен 0. |
-
 ## Конструкторы и деструкторы
 | Метод    | Описание   |
 | ----------- | ----------- |
@@ -40,7 +36,6 @@ class S21Matrix {
 | `S21Matrix(const S21Matrix& other)` | Конструктор копирования. |
 | `S21Matrix(S21Matrix&& other)` | Конструктор переноса. |
 | `~S21Matrix()` | Деструктор. |
-
 ## Перегрузка операторов
 | Оператор    | Описание   | Исключительные ситуации |
 | ----------- | ----------- | ----------- |
@@ -53,7 +48,6 @@ class S21Matrix {
 | `-=`  | Присвоение разности (`SubMatrix`). | Различная размерность матриц. |
 | `*=`  | Присвоение умножения (`MulMatrix`/`MulNumber`). | Число столбцов первой матрицы не равно числу строк второй матрицы. |
 | `(int i, int j)`  | Индексация по элементам матрицы (строка, колонка). | Индекс за пределами матрицы. |
-
 ## Сборка
 ```bash
 make
@@ -63,4 +57,30 @@ make
 ```bash
 make test # запуск тестов
 make gcov_report # построение отчета report.html
+```
+## Структура проекта
+```
+├── Makefile
+├── obj
+├── s21_matrix_accessor_mutator.cpp
+├── s21_matrix_constructors_destructor.cpp
+├── s21_matrix_help.cpp
+├── s21_matrix_oop.h
+├── s21_matrix_operations.cpp
+├── s21_matrix_operators.cpp
+└── test
+    ├── test_s21_accessor_mutator.cpp
+    ├── test_s21_calc_complements.cpp
+    ├── test_s21_constructors.cpp
+    ├── test_s21_determinant.cpp
+    ├── test_s21_eq.cpp
+    ├── test_s21_get_element_operator.cpp
+    ├── test_s21_helpers.cpp
+    ├── test_s21_inverse_matrix.cpp
+    ├── test_s21_matrix_plus.cpp
+    ├── test_s21_matrix_plus.h
+    ├── test_s21_mul.cpp
+    ├── test_s21_sub.cpp
+    ├── test_s21_sum.cpp
+    └── test_s21_transpose.cpp
 ```
