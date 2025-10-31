@@ -1,7 +1,8 @@
 NAME=s21_matrix_oop
 
 CXX=g++
-CXXFLAGS=-Wall -Werror -Wextra -O2 -std=c++17
+
+CXXFLAGS= -O3 -std=c++17
 
 SOURCEDIR=.
 BUILDDIR=obj
@@ -34,7 +35,7 @@ gcov_report:
 	$(CXX) $(CXXFLAGS) $(SOURCES) $(TESTSRC) -o $(TESTER) $(TESTLFLAGS) $(GCOVFLAGS)
 	./$(TESTER)
 	rm -f *-test*.*gcda *-test*.*gcno 
-	gcovr -r . --html --html-details  -o $(REPORT)
+	gcovr -r . --html  -o $(REPORT)
 
 format:
 	clang-format -i --style=Google $(SOURCES) $(TESTSRC)
