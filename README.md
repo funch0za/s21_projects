@@ -5,6 +5,8 @@
 + [BrickGame version 1.0](https://github.com/funch0za/s21_projects/tree/main/brick_game_v1)
 + [Simple bash utils](https://github.com/funch0za/s21_projects/tree/main/simple_bash_utils)
 + [Matrix](https://github.com/funch0za/s21_projects/tree/main/matrix)
++ [Maze](https://github.com/funch0za/s21_projects/tree/main/maze)
++ [Simple Navigator](https://github.com/funch0za/s21_projects/tree/main/simple_navigator)
 
 ## CPP
 + [Matrix plus](https://github.com/funch0za/s21_projects/tree/main/matrixplus)
